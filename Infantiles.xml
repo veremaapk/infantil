@@ -1495,11 +1495,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://tn-ar.cdncmd.com/sites/default/files/styles/976x549-nocrop/public/2014/12/11/snorkels1.jpg</fanart>
 </item>
 
+
 <item>
 <title>[COLOR blue]Duckman (Latino)[/COLOR]</title>
 <link>$doregex[makelist2]</link>
-
-
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
@@ -1585,6 +1584,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://webspace.webring.com/people/k9/9assimilator9/duckman.jpg</thumbnail>
 <fanart>https://secure.netflix.com/us/boxshots/tv_sdp_s/70157444.jpg</fanart>
 </item> 
+
 
 <item>
 <title>[COLOR blue]LEGO Star Wars: The Freemaker Adventures[/COLOR]</title>
