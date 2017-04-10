@@ -1496,7 +1496,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR blue]C[/COLOR]R][COLOR yellow]T[/COLOR]R][COLOR red]A[/COLOR]R]Duckman (Latino)[/COLOR]</title>
+<title>[COLOR blue]Duckman (Latino)[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 
 
