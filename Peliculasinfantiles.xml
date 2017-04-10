@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+           
+
+<item>
+<title>** Películas Disney **</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://fotos.subefotos.com/9945ea2605ddc478f9e85426f1d46bb7o.jpg</thumbnail>
+		<fanart>http://goo.gl/pYZhRl</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/gemma-valencia/peliculas-disney-en-castellano-32479/list,1,10</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/gemma-valencia/peliculas-disney-en-castellano-32479/list,1,10</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://fotos.subefotos.com/9945ea2605ddc478f9e85426f1d46bb7o.jpg</thumbnail>
+<fanart>http://goo.gl/pYZhRl</fanart>
+</item>
+
+<item>
+<title>** Películas Disney 2 **</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://fotos.subefotos.com/9945ea2605ddc478f9e85426f1d46bb7o.jpg</thumbnail>
+		<fanart>http://goo.gl/pYZhRl</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/trivianita/peliculas-de-walt-disneyel-rockero-30020/list,1,5</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/trivianita/peliculas-de-walt-disneyel-rockero-30020/list,1,5</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://fotos.subefotos.com/9945ea2605ddc478f9e85426f1d46bb7o.jpg</thumbnail>
+<fanart>http://goo.gl/pYZhRl</fanart>
+</item>
+
+<item>
+<title>** Cine Infaltil  **</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://static.blastingnews.com/media/photogallery/2014/12/13/main/minions-proximo-estreno-en-cines_146993.jpg</thumbnail>
+		<fanart>https://i.ytimg.com/vi/g1s7QITvhoA/maxresdefault.jpg</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/pupurb/cine-infantil-28280/list,1,22</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/pupurb/cine-infantil-28280/list,1,22</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://static.blastingnews.com/media/photogallery/2014/12/13/main/minions-proximo-estreno-en-cines_146993.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/g1s7QITvhoA/maxresdefault.jpg</fanart>
+</item>
+
+<item>
+<title>** Cine Infaltil 2 **</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://static.blastingnews.com/media/photogallery/2014/12/13/main/minions-proximo-estreno-en-cines_146993.jpg</thumbnail>
+		<fanart>https://i.ytimg.com/vi/g1s7QITvhoA/maxresdefault.jpg</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/djbits/cine-infantil-25681/list,1,5</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/djbits/cine-infantil-25681/list,1,5</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://static.blastingnews.com/media/photogallery/2014/12/13/main/minions-proximo-estreno-en-cines_146993.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/g1s7QITvhoA/maxresdefault.jpg</fanart>
+</item>
+
+
+		   
+<item>
+<title>** Dragon Ball Las Peliculas **</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://3.bp.blogspot.com/-zY2UuR9eXaM/Vc0OJC0YBnI/AAAAAAAAAr8/Y6nCaAfbr1g/s1600/dragon-ball-z-pelicula-5-los-rivales-mas-poderosos.jpg</thumbnail>
+		<fanart>http://ramenparados.com/wp-content/uploads/2015/10/dbsuper05.jpg</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/trivianita/dragon-ball-z-peliculas-castellanoel-rockero-28873/list,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/trivianita/dragon-ball-z-peliculas-castellanoel-rockero-28873/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-zY2UuR9eXaM/Vc0OJC0YBnI/AAAAAAAAAr8/Y6nCaAfbr1g/s1600/dragon-ball-z-pelicula-5-los-rivales-mas-poderosos.jpg</thumbnail>
+<fanart>http://ramenparados.com/wp-content/uploads/2015/10/dbsuper05.jpg</fanart>
+</item>
+
+<item>
+<title>** Peliculas + OVAS de Dragon Ball Z **</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://3.bp.blogspot.com/-zY2UuR9eXaM/Vc0OJC0YBnI/AAAAAAAAAr8/Y6nCaAfbr1g/s1600/dragon-ball-z-pelicula-5-los-rivales-mas-poderosos.jpg</thumbnail>
+        <fanart>http://ramenparados.com/wp-content/uploads/2015/10/dbsuper05.jpg</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/Animegoku18/peliculas-ovas-de-dragon-ball-z-14042/list,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/Animegoku18/peliculas-ovas-de-dragon-ball-z-14042/list,1,2</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-zY2UuR9eXaM/Vc0OJC0YBnI/AAAAAAAAAr8/Y6nCaAfbr1g/s1600/dragon-ball-z-pelicula-5-los-rivales-mas-poderosos.jpg</thumbnail>
+<fanart>http://ramenparados.com/wp-content/uploads/2015/10/dbsuper05.jpg</fanart>
+</item>
+	
+	
+<item>
+    <title>** Películas Variadas **</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#073;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#080;&#101;&#108;&#105;&#099;&#117;&#108;&#097;&#115;&#105;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;&#050;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/RfiT087.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+
+<item>
+    <title>** Mas Películas **</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#073;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#109;&#097;&#115;&#112;&#101;&#108;&#105;&#099;&#117;&#108;&#097;&#115;&#105;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;&#046;&#109;&#051;&#117;</externallink>
+    <thumbnail>http://i.imgur.com/RfiT087.jpg</thumbnail>
+    <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	
+<item>
+    <title>** Barbie **</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#073;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#098;&#097;&#114;&#098;&#105;&#101;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/lfqC6iV.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	
+<item>
+<title>** Barbie 2 ** </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://i.imgur.com/lfqC6iV.jpg</thumbnail>
+	    <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/gemma-valencia/peliculas-barbie-en-castellano-36877/list,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/gemma-valencia/peliculas-barbie-en-castellano-36877/list,1,2</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/lfqC6iV.jpg</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>	
+	
+<item>
+    <title>** Muchos Dibujos **</title>
+    <link>http://Ignoreme</link>
+    <externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#073;&#110;&#102;&#097;&#110;&#116;&#105;&#108;&#101;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#077;&#117;&#099;&#104;&#111;&#115;&#100;&#105;&#098;&#117;&#106;&#111;&#115;&#046;&#120;&#109;&#108;</externallink>
+	<thumbnail>http://i.imgur.com/VtIX5cf.jpg</thumbnail>
+	<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+    </item>
+	
+<item>
+<title>** Peppa Pig **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://estaticos.elmundo.es/television/programacion-tv/img/programas/52/296018.png</thumbnail>
+						<fanart>http://www.cestaland.com/blog/wp-content/uploads/peppa-pig-and-her-friends.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=f3hW3iYCs78&amp;list=PLldu2gYpt9I8Ww_U0ybaS0b_hiec-uCNN</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://estaticos.elmundo.es/television/programacion-tv/img/programas/52/296018.png</thumbnail>
+<fanart>http://www.cestaland.com/blog/wp-content/uploads/peppa-pig-and-her-friends.jpg</fanart>
+</item>
+	
+<item>
+<title>** 100 Peliculas Infantiles **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://4.bp.blogspot.com/-6s7gwyOCnx4/VNM3YF62SMI/AAAAAAAACWU/pJRe6WcRDyk/s900/es.disney-spanish.wikia.com.png</thumbnail>
+						<fanart>http://4.bp.blogspot.com/-6s7gwyOCnx4/VNM3YF62SMI/AAAAAAAACWU/pJRe6WcRDyk/s900/es.disney-spanish.wikia.com.png</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=vSjqe-3lMuo&amp;list=PLNq2eaZvd5PsV1JBCbij0U6igns0HnXew</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://4.bp.blogspot.com/-6s7gwyOCnx4/VNM3YF62SMI/AAAAAAAACWU/pJRe6WcRDyk/s900/es.disney-spanish.wikia.com.png</thumbnail>
+<fanart>http://4.bp.blogspot.com/-6s7gwyOCnx4/VNM3YF62SMI/AAAAAAAACWU/pJRe6WcRDyk/s900/es.disney-spanish.wikia.com.png</fanart>
+</item>
+
+<item>
+<title>** Cuentos Clasicos **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+						<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=yc3tgtpJlW4&amp;list=PL551CC3AF7A6A3F2D</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+</item>
+
+<item>
+<title>** Grandes Cuentos Infantiles 1 **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+						<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=9G9s9EBD-_Q&amp;list=PL0qgL2Guysvh4SMLaNwTEzA7MP38qexOU</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+</item>
+
+<item>
+<title>** Grandes Cuentos Infantiles 2 **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+						<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=VNZm1oRTS9E&amp;list=PL0qgL2Guysvi_cdLsBlfzLfQhHWUe7s6m</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+</item>
+
+<item>
+<title>** Grandes Cuentos Infantiles 3 **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+						<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=0cQQfH61dBw&amp;list=PLlns_S4YAmeXwm-ha8pnVqqlf6KBo1JBt</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+</item>
+
+<item>
+<title>** Grandes Cuentos Infantiles 4 **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+						<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=Fb_ShmCqbVk&amp;list=PLOsZnNALnBapZoU_6uD2wp4VoJUXTZSO_</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+</item>
+
+<item>
+<title>** Grandes Cuentos Infantiles 5 **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+						<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=Kn6g7mwQhcY&amp;list=PLOsZnNALnBar1uDC4kbZy09x8ypZidVs_</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+</item>
+
+<item>
+<title>** Grandes Cuentos Infantiles 6 **</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[makelist.param1]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+                        <thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+						<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+            ]]></listrepeat>
+            <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+            <page>https://www.youtube.com/watch?v=rQQhXbyCqEU&amp;list=PLyUpzciQrmrG-9i-N1xGTKRYutw8cP711</page>
+             <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.sanpablo.es/uploads/portadas/9788428530422.jpg</thumbnail>
+<fanart>http://s517892024.mialojamiento.es/wp-content/uploads/2015/02/Cuentos-clasicos.jpg</fanart>
+</item>
